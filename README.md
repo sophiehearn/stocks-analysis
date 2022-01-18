@@ -115,13 +115,19 @@ Finally, the for loop was created to have ticker volumes, ticker start price, an
 
 This refactored code was tested against the original code for both the 2017 and 2018 data sets. 
 
-Original code: 
+Original code ran at .55 seconds for 2017 and 2018.
+
 ![Original2017](https://raw.githubusercontent.com/sophiehearn/stocks-analysis/main/Resources/original2017.png)
 ![Original2018](https://raw.githubusercontent.com/sophiehearn/stocks-analysis/main/Resources/original2018.png)
 
-Refactored code:
+Refactored code ran at .070 seconds and .078 seconds for 2017 and 2018, respectively.
+
 ![Refactored2017](https://raw.githubusercontent.com/sophiehearn/stocks-analysis/main/Resources/refactored2017.png)
 ![Refactored2018](https://raw.githubusercontent.com/sophiehearn/stocks-analysis/main/Resources/refactored2018.png)
 
 ## Summary
+
+This timer function helped show that the refactored code was indeed significantly more efficient at running this dataset.
+
+Steve can now use this code to run much larger datasets. The next step for Steve's analysis is probably to design a code that will create this initial ticker array for him, because we still hard-coded the ticker IDs into the code. If it were able to search for "new" tickers and add them to the array, it could ostensibly be run on a dataset of almost any size. 
 
