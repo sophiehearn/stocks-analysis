@@ -10,7 +10,7 @@ This will help us understand whether the new refactored code is superior to the 
 To attempt to improve the efficiency of the processing, the code was edited so that the program only loops through the dataset once, rather than individually for every stock.
 
 The original code to check and output the total volume, starting price, and ending price of a stock looked like this: 
-,,,
+```
    For i = 0 To 11
        ticker = tickers(i)
        totalVolume = 0
@@ -44,7 +44,7 @@ The original code to check and output the total volume, starting price, and endi
        Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
 
    Next i
-,,,
+```
 
 
 ## Summary
